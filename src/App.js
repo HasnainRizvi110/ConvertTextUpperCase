@@ -18,7 +18,7 @@ function App() {
 
 
 
-<About/>
+<About/> 
 </div>
 
 
