@@ -14,18 +14,27 @@ function App() {
   <>
   
 
-
+<Router>
 <Navbar title="NavHome" />
 
    <div className="container my-3">
-<TextForm  heading="Enter the text to analyze"/>
+   <Switch>
+          <Route exact path="/about">
+            <About />
+          </Route>
+           <Route exact path="/">
+           <TextForm  heading="Enter the text to analyze"/>
+          </Route>
+    </Switch>
+    </div>
 
+    
+</Router>
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
-<About/> 
-</div>
+
 
 
 
