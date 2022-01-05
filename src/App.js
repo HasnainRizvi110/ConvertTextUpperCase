@@ -2,39 +2,24 @@ import './App.css';
 import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 
 function App() {
   return (
   <>
   
 
-<Router>
+
 <Navbar title="NavHome" />
 
    <div className="container my-3">
-   <Switch>
-          <Route exact path="/about">
-            <About />
-          </Route>
-           <Route exact path="/">
-           <TextForm  heading="Enter the text to analyze"/>
-          </Route>
-    </Switch>
-    </div>
+<TextForm  heading="Enter the text to analyze"/>
 
-    
-</Router>
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
-
+<About/> 
+</div>
 
 
 
